@@ -41,10 +41,10 @@ The corners of each board take precedence as it allows the game agent more contr
 directional tile that could be used to create a game winning state for either Red or Blue
 player. As the corners are considered to be both Red and Blue (see Figure 1), our agent
 prioritises corner placement. Additionally, occupation of each corner also takes away a tile
-that could be used for the opponent’s win condition path.
+that could be used for the opponent’s win condition path. Middle priority is used within the game 
+agent as a feint move to confuse the opponent’s decision making.
 ![image](https://user-images.githubusercontent.com/70874436/210519366-092af6fa-9556-4b4a-a79a-ac4e3e7cda58.png)
-Middle priority is used within the game agent as a feint move to confuse the opponent’s
-decision making.
+
 
 ## 2.3 Border Control
 Our agent employs the strategy to take bordering tiles of the board. This enables the player to
@@ -52,6 +52,7 @@ have greater chances of creating more win opportunity paths as well as lessening
 opponent’s win opportunity options. The agent evaluates borders based on whether it controls
 the corners linking one side of the border to the other, i.e. red looks to capture the borders
 vertically, preferably between 2 red occupied corners and blue vice versa.
+
 ![image](https://user-images.githubusercontent.com/70874436/210519430-22c59f5f-0a7c-4ae9-be26-02b67533577d.png)
 
 ## 2.4 Capturing the opponent
@@ -63,6 +64,7 @@ an action by red or blue results in a capture, our agent weighs this as 8 or -8 
 the capture is for or against it. Furthermore, an action where our agent blocks off a potential
 capture opportunity, a weighting of 16 is evaluated. Finally, if an action is made whereby the
 agent places the opponent in a potential capture scenario, is action is weighted at 6.
+
 ![image](https://user-images.githubusercontent.com/70874436/210519465-3f5fd78e-fbe7-4c34-856d-477652e2ed76.png)
 
 ## 2.5 Triplet Pattern
