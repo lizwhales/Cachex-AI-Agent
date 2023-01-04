@@ -1,5 +1,11 @@
 # Cachex-AI-Agent
-An AI Agent created with the MiniMax Algorithm to look into future states when playing a game of "Cachex". Rules and specfications of the game can be found under the *specification/* directory. Created by Elizabeth Wong and Sean Maher. 
+An AI Agent created with the MiniMax Algorithm to look into future states when playing a game of "Cachex". Rules and specfications of the game can be found under the *specification/* directory. Created by Elizabeth Wong and Sean Maher. To play a game using referee, invoke it as follows. The referee module (the directory referee/) and the modules with your Player class(es) should be within your current directory:
+```
+python -m referee <n> <red module> <blue module>
+```
+where python is the name of a Python 3.6 interpreter1 , <n> is the size of the game board and <red module>
+and <blue module> are the names of modules containing the classes Player to be used for Red and Blue, re-
+spectively. The referee offers many additional options. To read about them, run ‘python -m referee --help’.
 
 ## 1.1 Approach to the Cachex
 
